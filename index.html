@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5463e8fc00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Animado</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle"><i style="color: yellow;" class="fas fa-sun"></i></div>
+        <li style="--i:0;"> 
+            <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li style="--i:1;"> 
+            <a class="earth" href="#"><ion-icon name="earth-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;"> 
+            <a class="saturn" href="#"><ion-icon name="planet-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3;"> 
+            <a class="" href="#"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4;"> 
+            <a class="" href="#"><ion-icon name="key-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5;"> 
+            <a class="" href="#"><ion-icon name="videocam-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6;"> 
+            <a class="" href="#"><ion-icon name="game-controller-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7;"> 
+            <a class="" href="#"><ion-icon name="camera-outline"></ion-icon></a>
+        </li>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
